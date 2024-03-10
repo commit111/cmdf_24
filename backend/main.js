@@ -27,21 +27,52 @@ async function connectMongoDb() {
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!",
     );
-    
-    const doc = { image: "linda.png", def: "linda" };
-    const result = await termdef.insertOne(doc);
-    console.log(
-       `A document was inserted with the _id: ${result.insertedId}`,
-    );
+
+    await addEntryToDb("frog.png", "froggy");
+    await deleteEntryFromDb("frog.png", "froggy");
+
+    const arr =  await returnAllEntriesDb();
+    console.log(arr[0]);
     
   } finally {
     // Ensures that the client will close when you finish/error
     await client.close();
   }
 }
-//run().catch(console.dir);
-module.exports = { connectMongoDb };
 
+async function addEntryToDb(image_str, comment_str) {
+  //ADD AN ELEMENT TO COLLECTION
+  const doc = { image: image_str, def: comment_str };
+  const result = await termdef.insertOne(doc);
+  console.log(
+     `A document was inserted with the _id: ${result.insertedId}`,
+  );
+}
+
+async function deleteEntryFromDb(image_str, comment_str) {
+  //DELETE AN ELEMENT FROM COLLECTION
+   const doc = { image: image_str, def: comment_str };
+  const deleteResult = await termdef.deleteOne(doc);
+  console.dir(deleteResult.deletedCount);
+}
+
+async function returnAllEntriesDb() {
+  //RETURN ALL ELEMENTS IN COLLECTION
+  var arr = [];
+  const collectionElements = termdef.find();
+  for await (const doc of collectionElements) {
+    arr.push({
+      image: doc.image,
+      def: doc.def,
+    });
+  } 
+  return arr;
+}
+
+
+
+//run().catch(console.dir);
+module.exports = { connectMongoDb, addEntryToDb };
 
 
 //--------------------------------------------
