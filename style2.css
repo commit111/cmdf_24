@@ -1,0 +1,108 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#topbar {
+  text-align: right;
+ justify-content: right; 
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Lexend", sans-serif;
+  position: relative; 
+}
+.navButton {
+  font-weight: bold;
+  background-color: #2DAD90;
+  color: white;
+  padding:5px;
+  padding-right:10px;
+  padding-left:10px;
+  border-radius: 20px;
+}
+
+body {
+  background-color: #103140;
+}
+
+table, th, td {
+  border: 1px solid  grey;
+  border-radius: 5px;
+  tr:nth-child(even) {background-color: #f2f2f2;}
+  text-align:center
+}
+
+#commentTable {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 5px;
+}
+
+#addCardSection {
+  text-align:center;
+  padding: 10px;
+  margin-bottom: 0px;
+  margin-top:0px;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#addlabel {
+  font-decoration: bold;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#saveAndConvertRow {
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  padding: 5px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+}
+
+input {
+  border-color: #2DAD90;
+  border-radius: 5px;
+  text-align: center;
+  padding: 5px;
+}
+
+.tablePageButton {
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #2DAD90;
+  border-radius: 5px;
+  color: white;
+}
+
+#tableSpace {
+  text-align:center;
+  background-color: white;
+  border-radius:5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.tablePageHeader {
+  text-align: center;
+  color: white;
+}

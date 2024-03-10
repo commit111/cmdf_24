@@ -157,7 +157,10 @@ function start() {
   app.get('/tabletool.html', function (req, res) {
     res.sendFile('/tabletool.html', {root:'.'});
   });
-  
+
+  app.get('/table.html', function (req, res) {
+    res.sendFile('/table.html', {root:'.'});
+  });
   app.set('port', process.env.PORT || 3000);
   http.listen(app.get('port'), function() {
       console.log('listening on port', app.get('port'));
