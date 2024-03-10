@@ -1,16 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>cmd-f project</title>
-    <script src="https://unpkg.com/cropperjs@next"></script>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-    
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>cmd-f project</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
   <style>
     :root {
       --bg-color: #103140;
@@ -80,13 +80,6 @@
     }
     .upload-pdf {
       color:white;
-      border: none;
-      padding: 15px 30px;
-      text-decoration: none;
-      margin: 4px 2px;
-      cursor: pointer;
-      background-color: #2dad90;
-      border-radius: 50px;
     }
 
     .upload {
@@ -138,32 +131,20 @@
 
 
 
-  </style>
-
-  <body>
-    <!-- <div class="logo">Welcome to cmd-f project</div>
-  <script src="script.js"></script>
-  <button>
-    <a href="./viewpdf.html">View PDF</a>
-  </button>
-  <button>
-    <a href="./card.html">View Cards</a>
-  </button> -->
-
-    
-    <div class="wrapper">
-      <div class="introcard"></div>
-
-      <div class="highlight"></div>
-      <div class="highlight-text">Welcome to<br />ClipNFlip</div>
-      <div class=upload>
-        <form id="upload-form" onsubmit="uploadPDFhelper()">
-          <input class="choosefile" type="file" id="pdf-input" accept=".pdf" />
-          <!-- <input class="upload-pdf" type="submit" value="Upload PDF"></input> -->
-          <a href="viewpdf.html" class="upload-pdf">Upload PDF</a>
-        </form>
+  </style> 
+<body>
+  <div class="wrapper">
+  <h1>Card View</h1>
+  <!-- <div class="card"></div>
+    <div class="scene scene--card">
+      <div class="card">
+        <div class="card__face card__face--front">front</div>
+        <div class="card__face card__face--back">back</div>
       </div>
     </div>
-     <script type ="module" src="/index.js"></script>
-  </body>
+    <p>Click card to flip.</p> -->
+    <!-- <script src="script.js"></script> -->
+  </div>
+</body>
+
 </html>

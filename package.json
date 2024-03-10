@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.0.6",
+    "cropperjs": "^1.6.1",
     "express": "^4.18.3",
     "main.js": "^0.0.1",
     "mongodb": "^6.4.0",
