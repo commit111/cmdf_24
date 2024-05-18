@@ -13,3 +13,9 @@ We worked with several technologies that none of us have encountered or used bef
 
 ### Why we want to continue working on our project!
 All of us believe that this versatile, convenient tool can be used by students everywhere, and it's something that would make things in our day to day lives easier! Given the opportunity to further develop our project, we'd improve the implementation (which is somewhat hasty right now, given the time constraints), and make it something that students can access and use to help them in their studies.
+
+### Built With: 
+HTML, CSS, JavaScript, Express.js, Node.js, MongoDB
+
+### Prototyped with:
+Figma
